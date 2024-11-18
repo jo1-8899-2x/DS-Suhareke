@@ -1,0 +1,15 @@
+.slider-paragraph{
+    background-color: aquamarine;
+    padding: 20px; 
+    color: antiquewhite;
+ }
+ span{
+    margin-top: 50px;
+    background-color: blue;
+    color: aliceblue;
+ }
+ .bg-img{background: url(https://st4.depositphotos.com/14431644/22076/i/450/depositphotos_220767694-stock-photo-handwriting-text-writing-example-concept.jpg);
+ }
+.border{border-width: 2px;
+border-style: solid;
+}
