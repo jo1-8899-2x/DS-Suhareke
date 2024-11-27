@@ -1,0 +1,20 @@
+ol{
+    list-style-type: square;
+}
+li{
+    border-bottom: 1px salmon;
+}
+ol{
+    list-style-image: url(https://cdn-icons-png.flaticon.com/512/5290/5290058.png) 500px;
+    list-style-position: inside;
+}
+td, th{
+    border: 1px solid;
+    padding: 50px;
+    border-collapse: collapse;
+    background-color: aqua;
+    color: brown;
+}
+table{
+    border-collapse: collapse
+}
