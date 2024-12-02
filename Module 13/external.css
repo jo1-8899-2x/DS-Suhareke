@@ -18,3 +18,16 @@ td, th{
 table{
     border-collapse: collapse
 }
+table tbody > tr :nth-child(odd)
+{
+    background-color: goldenrod;
+}
+div{
+width: 200px;
+height: 800px;
+background-color: #ddd;
+overflow: y;
+
+}
+
+
