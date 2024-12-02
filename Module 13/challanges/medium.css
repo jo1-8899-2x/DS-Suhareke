@@ -1,0 +1,7 @@
+td, th{
+    border: 1px solid;
+    padding: 50px;
+    border-collapse: collapse;
+    background-color: rgb(224, 133, 209);
+    color: brown;
+    }
