@@ -1,0 +1,37 @@
+article > p {
+    background-color: hotpink;
+    color: cornflowerblue;
+}
+div > p{
+    background-color: bisque;
+    color: cornflowerblue;
+}
+p{
+    background-color: rgb(74, 102, 58);
+    color: cornflowerblue;    
+}
+input{
+    background-color:rgb(42, 158, 204);   
+    color: fuchsia; 
+}
+p:first-of-type {
+    background-color:burlywood;
+}
+p ::first-letter {
+    background-color: blue;
+}
+p::first-line{
+    background-color: brown;
+}
+p::after{
+    background-color: chocolate;
+}
+p::before{
+    background-color: cyan;
+}
+p::selection{
+    background-color: darkviolet;
+}
+p{
+    opacity: 0.1;
+}
