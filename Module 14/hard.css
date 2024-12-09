@@ -1,0 +1,34 @@
+ol  {
+    background-color: hotpink;
+    color: cornflowerblue;
+}
+ol  {
+    background-color: bisque;
+    color: cornflowerblue;
+}
+ul  {
+    background-color: brown;
+    color: cornflowerblue;
+}
+ul {
+    background-color: orange;
+    color: cornflowerblue;
+}
+
+ul:first-of-type {
+    background-color:burlywood;
+}
+ol ::first-letter {
+    background-color: blue;
+}
+ul::first-line{
+    background-color: brown;
+}
+ol::after{
+    background-color: chocolate;
+}
+ul::selection{
+        background-color: darkviolet;}
+        ul, ol{
+            opacity: 0.5;
+        }
