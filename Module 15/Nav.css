@@ -1,6 +1,27 @@
-nav {
-    height: 200px;
-    border: 1px solid;
-    left: 600px;
-    top: 50px;
+ul{
+    list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: burlywood;
+        overflow: hidden;
+        display: inline-block;
+        height: 100%;
+        width: 300;
+}
+ul li{
+  font-weight: 300 !important;
+}
+ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: bisque;
+}
+ul li  a:hover:not(.active){
+    background-color: olivedrab;
+   
+
+}
+.active {
+  background-color: coral;
 }
