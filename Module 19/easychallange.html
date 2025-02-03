@@ -4,32 +4,30 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <style>
-    .FlexContainer > div:nth-child(2){
-    order: 5;
+        .FlexContainer{
+    display:flex ;
+    background-color: pink;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.FlexContainer > div:nth-child(3){
-    order: 3;
-}
-.FlexContainer > div:nth-child(4){
-    order: 2;
-}
-.FlexContainer > div:nth-child(5){
-    order: 4;
-}
-.FlexContainer > div:nth-child(1){
-    width: 99%;;
+.FlexContainer > div{
+    padding: 20px;
+    margin: 15px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+   
 }
 .FlexContainer > div:nth-child(1){
   align-self: flex-end;
-}    
-     </style>
+}    </style>
 </head>
 <body>
     <div class="FlexContainer">
         <div>1</div>
         <div>2</div>
         <div>3</div>
-        <div>4</div>
+    
     </div>
     
 </body>
