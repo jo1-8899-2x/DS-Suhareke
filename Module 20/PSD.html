@@ -2,53 +2,81 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
-    <STYle>
-        .page1{
-   background-color: blueviolet;         
-            
+    <title> Website </title>
+    <style>
+        body{
+            margin: 0;
+            font-family: "Titillium Web", sans-serif;
         }
-        ul {
-  list-style: none;
-  padding: 0;
-}
+        #section-1{
+            background-color: #87509c;
+        }
+        #section > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 150px;
+        }
+        .logo{
+            color: white;
+            font-size: 35px;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 10px 15px;
+            float: right;
+        }
+        nav ul li a{
+           display: inline-block;
+            color: white;
+        }
+        .main-heading{
+        color: white;
+         margin: auto;
+         width: 50%;
+        padding: 10px;
 
-li {
-  display: inline;
-  margin-right: 10px; 
-  display: flex;
-            justify-content: space-between
-}
-    </STYle>
+        }
+        .wwu{
+            border: 3px orange;
+            background-color: orange;
+        }
+            </style>
 </head>
 <body>
-    <div class="page1">
-        <img src="https://assets.nvidiagrid.net/ngc/logos/Cuda.png" alt="">
+    <section id="section-1">
+        <div>
+            <h1 class="logo">Cuda</h1>
+        </div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li> 
+                 <li>
+                    <a href="#">Work</a>
+                </li> 
+                 <li>
+                    <a href="#">Blog</a>
+                </li>  
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
-        <h1>Hi there! We are the new kids on the block 
-            and we build awesome websites and mobile apps.</h1>
-            <a href="#">WORK WITH US!</a>
-    </div>
-
-
-    </div>
-    <div class="page3">
-        <h1>SERVICES WE PROVIDE</h1>
-        <h5>We are working with both individuals and businesses from all over the globe 
-            to create awesome websites and applicat.</h5>
-            <img src="https://cdn-icons-png.flaticon.com/512/4908/4908290.png" alt="pic1">
-            <img src="https://cdn-icons-png.flaticon.com/512/3444/3444830.png" alt="pic2">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/451/251/small_2x/settings-icon-gear-3d-render-png.png" alt="pic3">
-            <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3432-thumb.png" alt="pic4">
-    </div>
-
+        <div class="main-heading">
+            <h1>Hi there! We are the new kids on the block!</h1>
+          
+        </div>
+        <div class="wwu">
+            <a href = "#">Work With Us<a>
+           
+          
+        </div>
+    </section>
+    <section id = 
 </body>
 </html>
