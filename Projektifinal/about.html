@@ -10,10 +10,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+::selection{
+    background-color: black;
+    color: white;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+   background-color: tomato;
     color: #333;
     line-height: 1.6;
 }
@@ -23,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: left;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+  
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,14 +35,14 @@ header {
 
 
 .about-us {
-    background-color: #fff;
+    background-color: tomato;
     padding: 40px 20px;
     text-align: center;
 }
 
 .about-us h2 {
     font-size: 2rem;
-    color: #444;
+    
     margin-bottom: 20px;
 }
 
@@ -95,6 +98,26 @@ header {
     font-size: 1rem;
     color: #666;
 }
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #121212;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
 
 
     </style>
@@ -108,7 +131,7 @@ header {
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -118,7 +141,11 @@ header {
     <section class="about-us">
         <div class="container">
             <h2>About Us</h2>
-            <p>This is a website about an online shop. (Made with ChatGPT, W3Schools and a person)</p>
+            <p>An online store is a virtual marketplace where customers can browse and purchase products or services through a website or mobile app.
+                 These stores offer a wide range of items, from clothing and electronics to groceries and home goods, all available at the convenience of a few clicks.
+                  With secure payment options and reliable shipping services, online stores have become a go-to solution for many consumers,
+                   offering the flexibility to shop from anywhere at any time. Additionally, online stores often provide detailed product descriptions,
+                 customer reviews, and easy return policies to ensure a smooth and satisfying shopping experience.</p>
         </div>
     </section>
 
@@ -127,17 +154,17 @@ header {
             <h2>Our Staff</h2>
             <div class="team-members">
                 <div class="member">
-                    <img src="https://i.pinimg.com/736x/09/21/fc/0921fc87aa989330b8d403014bf4f340.jpg" alt="Team Member">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png" alt="Team Member">
                     <h3>CEO</h3>
                    
                 </div>
                 <div class="member">
-                    <img src="https://i.pinimg.com/736x/09/21/fc/0921fc87aa989330b8d403014bf4f340.jpg" alt="Team Member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3233/3233508.png" alt="Team Member">
                     <h3>Developer</h3>
                   
                 </div>
                 <div class="member">
-                    <img src="https://i.pinimg.com/736x/09/21/fc/0921fc87aa989330b8d403014bf4f340.jpg" alt="Team Member">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1253/1253756.png" alt="Team Member">
                     <h3>Engineer</h3>
                     
                 </div>

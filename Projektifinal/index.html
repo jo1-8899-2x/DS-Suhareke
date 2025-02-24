@@ -12,14 +12,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+::selection{
+    background-color: black;
+    color: white;
+}
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: darkgoldenrod;
+    background-color: darkcyan;
     background-size: 400% 400%;
-  
+ 
     color: white;
 }
 
@@ -36,7 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: darkcyan;
     position: fixed;
     width: 100%;
     top: 0;
@@ -50,6 +54,7 @@ header .logo h1 {
 header nav ul {
     list-style: none;
     display: flex;
+    
 }
 
 header nav ul li {
@@ -67,11 +72,11 @@ header nav ul li a:hover {
     color: #ffd700;
 }
 
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+   background-color: #333;
 }
 
 .hero h2 {
@@ -82,7 +87,7 @@ header nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Product Grid */
+
 #products {
     padding: 80px 20px;
     text-align: center;
@@ -139,7 +144,7 @@ header nav ul li a:hover {
 <body>
     <header>
         <div class="logo">
-            <h1>Projekti Final</h1>
+            <h1>Online Store P</h1>
         </div>
         <nav>
             <ul>
@@ -152,7 +157,7 @@ header nav ul li a:hover {
 
     <section id="home">
         <div class="hero">
-            <h2>Online Store Project</h2>
+            <h2>Home</h2>
             
         </div>
     </section>
@@ -184,6 +189,17 @@ header nav ul li a:hover {
                 <img src="https://png.pngtree.com/png-vector/20240822/ourmid/pngtree-stack-of-folded-striped-dress-shirts-isolated-on-black-background-png-image_13591037.png" alt="Product 3">
                 <h3>Shirts</h3>
                 <p>79.99$</p>
+           
+            </div>
+            <div class="product">
+                <img src="https://pngimg.com/d/computer_mouse_PNG7700.png" alt="Product 3">
+                <h3>Mouse</h3>
+                <p>15.99$</p>
+            </div>
+            <div class="product">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/665/175/small_2x/slim-thai-and-english-keyboard-isolated-on-white-background-png.png" alt="Product 3">
+                <h3>Keyboard</h3>
+                <p>18.99$</p>
             </div>
 
             

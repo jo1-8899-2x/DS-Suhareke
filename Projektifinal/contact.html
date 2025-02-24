@@ -13,7 +13,10 @@
     box-sizing: border-box;
 }
 
-
+::selection{
+    background-color: black;
+    color: white;
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color: darkseagreen;
@@ -35,7 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    
     position: fixed;
     width: 100%;
     top: 0;
@@ -70,7 +73,7 @@ header nav ul li a:hover {
 .contact-hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+   background-color: #333;
 }
 
 .contact-hero h2 {
@@ -165,7 +168,7 @@ footer {
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -198,7 +201,6 @@ footer {
         </div>
     </section>
 
- 
-  
+
 </body>
 </html>
