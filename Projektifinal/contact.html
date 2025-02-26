@@ -5,158 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Awesome Store</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-    
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-::selection{
-    background-color: navy;
-    color: navajowhite;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: darkseagreen;
-    background-size: 400% 400%;
-    
-    color: white;
-}
+        ::selection {
+            background-color: navy;
+            color: navajowhite;
+        }
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(270deg, #2c3e50, #4ca1af);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            color: white;
+        }
 
-@keyframes gradientBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+        header .logo h1 {
+            font-size: 2rem;
+        }
 
-header .logo h1 {
-    font-size: 2rem;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
+        header nav ul li {
+            margin-left: 20px;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
+        header nav ul li a:hover {
+            color: #ffd700;
+        }
 
-header nav ul li a:hover {
-    color: #ffd700;
-}
+        .contact-hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #333;
+        }
 
+        .contact-hero h2 {
+            font-size: 3rem;
+        }
 
-.contact-hero {
-    text-align: center;
-    padding: 100px 20px;
-   background-color: #333;
-}
+        .contact-hero p {
+            font-size: 1.2rem;
+        }
 
-.contact-hero h2 {
-    font-size: 3rem;
-}
+        #contact {
+            padding: 80px 20px;
+            text-align: center;
+        }
 
-.contact-hero p {
-    font-size: 1.2rem;
-}
+        .contact-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
 
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
 
-#contact {
-    padding: 80px 20px;
-    text-align: center;
-}
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
 
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
+        .form-group label {
+            font-size: 1rem;
+            color: #ecf0f1;
+            margin-bottom: 5px;
+        }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            transition: border-color 0.3s ease;
+        }
 
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ffd700;
+            outline: none;
+        }
 
-.form-group label {
-    font-size: 1rem;
-    color: #ecf0f1;
-    margin-bottom: 5px;
-}
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #333;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-}
+        .submit-btn:hover {
+            background-color: #f39c12;
+            transform: scale(1.05);
+        }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #ffd700;
-    outline: none;
-}
-
-.submit-btn {
-    padding: 10px 20px;
-    background-color: #ffd700;
-    color: #333;
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #f39c12;
-}
-
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-}
-
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -169,7 +170,6 @@ footer {
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
-               
             </ul>
         </nav>
     </header>
@@ -177,7 +177,6 @@ footer {
     <section id="contact">
         <div class="contact-hero">
             <h2>Contact Page</h2>
-         
         </div>
 
         <div class="contact-form-container">
@@ -202,15 +201,10 @@ footer {
         </div>
     </section>
     
-    <footer><p> If you're having trouble navigating or making purchases on our online store, we apologize for any inconvenience.
-         We understand how frustrating it can be, whether it's issues with the checkout process, difficulty finding specific products, 
-         or trouble with account logins. Please don't hesitate to reach out to our customer support team, who are available to assist you with troubleshooting,
-          resolving any technical glitches, or answering any questions you may have.
-         Your satisfaction is important to us,
-          and we're committed to ensuring your shopping experience is as smooth and enjoyable as possible.</p>
-          
-   
-
-
-</body>
-</html>
+    <footer>
+        <p>If you're having trouble navigating or making purchases on our online store, we apologize for any inconvenience.
+        We understand how frustrating it can be, whether it's issues with the checkout process, difficulty finding specific products, 
+        or trouble with account logins. Please don't hesitate to reach out to our customer support team, who are available to assist you with troubleshooting,
+        resolving any technical glitches, or answering any questions you may have.
+        Your satisfaction is important to us,
+        and
