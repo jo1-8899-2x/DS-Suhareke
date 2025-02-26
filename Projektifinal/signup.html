@@ -21,7 +21,7 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(270deg, #2c3e50, #4ca1af);
+            background: linear-gradient(270deg, #448342, #314233);
             background-size: 400% 400%;
             animation: gradientBackground 15s ease infinite;
             color: white;
@@ -68,7 +68,6 @@
 
         header nav ul li a:hover {
             color: #ffd700;
-            transform: scale(1.05);
         }
 
         .contact-hero {
@@ -92,7 +91,7 @@
 
         .contact-form-container {
             max-width: 600px;
-            margin: 0 auto;
+            margin: auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -127,7 +126,7 @@
             color: white;
             transition: border-color 0.3s ease;
         }
-
+      
         .form-group input:focus,
         .form-group textarea:focus {
             border-color: #ffd700;
@@ -150,6 +149,8 @@
             background-color: #f39c12;
             transform: scale(1.05);
         }
+ 
+
 
         footer {
             text-align: center;
@@ -165,7 +166,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Contact</h1>
+            <h1>Sign Up</h1>
         </div>
         <nav>
             <ul>
@@ -179,37 +180,32 @@
 
     <section id="contact">
         <div class="contact-hero">
-            <h2>Contact Page</h2>
+            <h2>Sign Up Page</h2>
         </div>
 
         <div class="contact-form-container">
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Full Name</label>
+                    <label for="name">Username</label>
                     <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
+                    <label for="email">Password</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn">Create Your Account</button>
             </form>
+           <div class="loginbutton"></div> <p>If you already have an account pls go to our Log In page</p>
+      <button>  <li><a href="login.html">Log In </a></li> </button></div>
+
         </div>
     </section>
-    
     <footer>
-        <p>If you're having trouble navigating or making purchases on our online store, we apologize for any inconvenience.
-        We understand how frustrating it can be, whether it's issues with the checkout process, difficulty finding specific products, 
-        or trouble with account logins. Please don't hesitate to reach out to our customer support team, who are available to assist you with troubleshooting,
-        resolving any technical glitches, or answering any questions you may have.
-        Your satisfaction is important to us,
-        and</p>
+        <p>If you are having problems creating an account make sure to leave us a message in the contact page.</p>
     </footer>
+    
+    
 </body></html>
