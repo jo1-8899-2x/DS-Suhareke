@@ -6,131 +6,122 @@
     <title>About Us</title>
     <style> 
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-::selection{
-    background-color: navy;
-    color: navajowhite;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color:  rgb(120, 226, 138);
-    color: #333;
- 
-    line-height: 1.6;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 20px;
-  
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-
-.about-us {
-    background-color:  rgb(120, 226, 138);
-    padding: 40px 20px;
-  
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 2rem;
-    
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.team {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.team h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.team-members {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.member {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-}
-
-.member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.member h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.member p {
-    font-size: 1rem;
-    color: #666;
-}
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #121212;
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    color: #ffd700;
-}
-body {
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s ease;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-
-
-
-
-
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ::selection {
+            background-color: navy;
+            color: navajowhite;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(120, 226, 138);
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.5s ease;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+        header nav ul li {
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: #121212;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+        header nav ul li a:hover {
+            color: #ffd700;
+        }
+        .about-us {
+            background-color: rgb(120, 226, 138);
+            padding: 100px 80px;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1501594907355-88ab0218e9e0'); /* A background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .about-us h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+        .about-us p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+        .team {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .team h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .member {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .member:hover img {
+            transform: scale(1.1);
+        }
+        .member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .member p {
+            font-size: 1rem;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -144,21 +135,14 @@ body {
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
-            
             </ul>
         </nav>
     </header>
 
-
-    
     <section class="about-us">
         <div class="container">
             <h2>About Us</h2>
-            <p>An online store is a virtual marketplace where customers can browse and purchase products or services through a website or mobile app.
-                 These stores offer a wide range of items, from clothing and electronics to groceries and home goods, all available at the convenience of a few clicks.
-                  With secure payment options and reliable shipping services, online stores have become a go-to solution for many consumers,
-                   offering the flexibility to shop from anywhere at any time. Additionally, online stores often provide detailed product descriptions,
-                 customer reviews, and easy return policies to ensure a smooth and satisfying shopping experience.</p>
+            <p>Shop With Us!</p>
         </div>
     </section>
 
@@ -167,23 +151,22 @@ body {
             <h2>Our Staff</h2>
             <div class="team-members">
                 <div class="member">
-                    <img src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png" alt="Team Member">
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="CEO">
                     <h3>CEO</h3>
-                   
+                    <p>John Doe</p>
                 </div>
                 <div class="member">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3233/3233508.png" alt="Team Member">
+                    <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Developer">
                     <h3>Developer</h3>
-                  
+                    <p>Jane Smith</p>
                 </div>
                 <div class="member">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1253/1253756.png" alt="Team Member">
+                    <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Engineer">
                     <h3>Engineer</h3>
-                    
+                    <p>Alex Johnson</p>
                 </div>
             </div>
         </div>
     </section>
-  
 </body>
 </html>
