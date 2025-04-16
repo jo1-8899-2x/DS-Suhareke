@@ -14,3 +14,19 @@ var ans =document.querySelector('#answer')
 btn2.addEventListener("click",function(){
     ans.innerHTML = parseInt(input1.value) + parseInt(input2.value);
 });
+
+button.onclick = function (){
+
+   if(input.value > 10)
+    {
+        text.innerHTML="Input value is greater than 10";
+    } 
+    else if (input.value < 10)
+    text.innerHTML = "input value is less than 10"
+}
+else{
+    text.innerHTML = "Input value is equal to 10
+    "
+}
+
+}
