@@ -32,3 +32,33 @@ console.log(x)
  }
  console.log("--------------------------------");
 
+ 
+ var person=[firstName:"John", lastName:"Doe", age:25];
+
+ var text ='';
+ var z;
+ for(z in person){
+   text+= person[Z];
+ }
+ console.log(text);
+
+
+
+console.log("--------------------------------");
+
+var names = ['Steve','Bill','Mark'];
+var y;
+for(y of names){
+   console.log(y);
+
+}
+
+
+console.log("--------------------------------");
+
+var txt="Javascript";
+var l;
+
+for(l of txt){
+   console.log(1);
+}
