@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easy Challange</title>
+    <style>
+        .error{
+            color: red;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="nameForm">
+
+            <label for="username" >Name:</label>
+            <input type="text" name="username" id="username">
+
+            <span id="errorMsg" class="error"></span>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+           const form =document.getElementById('nameForm');
+           const usernameInput =document.getElementById('username');
+           const errorMsg =document.getElementById('errormsg');
+
+           form.addEventListener('submit',function(event){
+        event.preventDefault();
+    const name=usernameInput.value;
+    const onlyLetters=/^[A-Za-z]+$/;
+    
+    if(!onlyLetters.text(name)){
+        errorMsg.textContent = "Please use letter only";
+    }else{
+        errorMsg.textContent="";
+        alert("Form submitted succsessfully!");
+    }
+    });
+        </script>
+</body>
+</html>
