@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+body{
+font-family: arial;
+padding: 20px;
+ }
+ .error{
+    color:red;
+ }
+    </style>
+</head>
+<body>
+
+    <h2>Form Validation</h2>
+
+    <form id="userForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div id="nameError" class="error"></div>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <div id="ageError" class="error"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+
+   
+            const name = document.getElementById('name').value;
+            const nameError = document.getElementById('nameError');
+            if (name.length < 2) {
+                nameError.textContent = "Name must be at least 2 characters.";
+                isValid = false;
+            } else {
+                nameError.textContent = "";
+            }
+
+
+            const age = document.getElementById('age').value;
+            const ageError = document.getElementById('ageError');
+            if (age < 0 || age > 120) {
+                ageError.textContent = "Age must be between 0 and 120.";
+                isValid = false;
+            } else {
+                ageError.textContent = "";
+            }
+
+            return isValid;
+        }
+    </script>
+
+</body>
+</html>
